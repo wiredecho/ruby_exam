@@ -1,0 +1,56 @@
+
+
+
+<div class="container">
+	<div class="row">
+		<div id="logreg" class="col-md-6">
+			<h1>Register</h1>
+			<form action="/users" method="post">
+				<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+				<div class="form-group">
+					<label for="first_name">First Name: </label>
+					<input type="text" class="form-control" id="first_name" name=user[first_name]>
+				</div>
+				<div class="form-group">
+					<label for="last_name">First Name: </label>
+					<input type="text" class="form-control" id="last_name" name=user[last_name]>
+				</div>
+				<div class="form-group">
+					<label for="email">Email: </label>
+					<input type="text" class="form-control" id="email" name="user[email]">
+				</div>
+				<div class="form-group">
+					<label for="password">Password: </label><br/>
+					<input type="password" class="form-control" id="password" name="user[password]">
+				</div>
+				<div class="form-group">
+					<label for="password_confirmation">Confirm Password: </label><br/>
+					<input type="password" class="form-control" id="password_confirmation" name="user[password_confirmation]">
+				</div>
+				<button type="submit" class="btn btn-info">Submit</button>
+			</form>
+		</div>
+
+
+		<div id="logreg" class="col-md-6">
+			<h1>Login</h1>
+			<form action="/sessions" method="POST">
+			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+				<div class="form-group">
+					<label for="name">Email: </label>
+					<input type="text" class="form-control" id="email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="password">Password: </label><br/>
+					<input type="password" class="form-control" id="password" name="password">
+				</div>
+				<button type="submit" class="btn btn-info">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	
+
+
+
+</div>
