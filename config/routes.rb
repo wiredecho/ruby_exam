@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'groups/index'
+  resources :groups  
 
   root 'users#main'
   post 'users' => "users#create"
-
+  post "sessions" => "sessions#create"
+  get "groups" => 'groups#index'
+  delete "sessions" => "sessions#destroy"
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.

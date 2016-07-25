@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_many :messages
+	has_many :groups
   	has_secure_password
 
   	EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i

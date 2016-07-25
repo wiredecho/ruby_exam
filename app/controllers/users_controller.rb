@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   	if user.save
   		session[:user_id] = user.id
-  		redirect_to "/"
+  		redirect_to "/groups"
   	else
   		flash[:errors] = user.errors.full_messages
   		redirect_to '/'
