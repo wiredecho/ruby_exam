@@ -12,6 +12,13 @@ class GroupsController < ApplicationController
 		redirect_to :back
 	end
 
+	def show
+		@group = Group.find(params[:id])
+		@members = Member.where(group_id: params[:id])
+
+	end
+
+
 	private
 	def group_params
 		params.require(:group).permit(:group_name, :description)

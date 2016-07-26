@@ -10,7 +10,7 @@
 			<h5>Here are the orgranizations you may join:</h5><br/><br/>
 			<% @groups.reverse.each do |m| %>
 			<div id="iterate">
-				<a href=""><h4><%= "#{m.group_name} - #{m.user.first_name.capitalize} #{m.user.last_name.capitalize}" %></h4></a>
+				<a href="groups/<%= m.id %>"><h4><%= "#{m.group_name} - #{m.user.first_name.capitalize} #{m.user.last_name.capitalize}" %></h4></a>
 				<h5>Created at <%= "#{m.created_at.strftime("%B %d %Y")}" %></h5>
 				<p><%= m.description %></p><br/>
 				<% end %>
