@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'hirb'
 gem 'bootstrap-sass', '~> 3.3.6'
-
+gem 'rails-footnotes', '>= 4.0.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

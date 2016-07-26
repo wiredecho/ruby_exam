@@ -15,8 +15,35 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
- 
+
+
 #logreg {
 	display:inline-block;
 	vertical-align: top;
+}
+
+#gpage {
+	color:gray;
+	display:inline-block;
+	vertical-align: top;
+
+	margin:0px;
+	padding:0px;
+}
+
+#gpage2 {
+	color:gray;
+	display:inline-block;
+	vertical-align: top;
+	width:490px;
+	margin:0px;
+	border: .5px silver solid;
+	padding: 15px;
+	background-color: #EEEEEE;
+}
+
+#iterate {
+	color: orange;
+	width: 300px;
+	display:inline-block;
 }
